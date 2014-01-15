@@ -1,0 +1,132 @@
+li.logo a:link, li.logo a:visited,
+li.nav-small a:link, li.nav-small a:visited,
+li.logo-moblie a:link, li.logo-moblie a:visited {
+  float: left;
+  padding: 0;
+  width: 100%;
+}
+
+li.logo-moblie a:link, li.logo-moblie a:visited {
+  text-align: left;
+}
+
+li.logo a:hover, li.logo a:active, li.logo a:focus,
+li.nav-small a:hover, li.nav-small a:active, li.nav-small a:focus,
+li.logo-moblie a:hover, li.logo-moblie a:active, li.logo-moblie a:focus {
+  color: #00ff16;
+  background: none;
+}
+
+.logo img, li.logo-moblie img {
+  width: 100%;
+  max-width: 70px;
+}
+
+.logo {
+  display: none;
+}
+
+.nav-small img {
+  height: 50px;
+  width: 50px;
+}
+
+.nav-small a {
+  float: left;
+}
+
+.nav-small a img {
+  float: right;
+  margin: 0 1.5%;
+}
+
+header {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+header nav {
+  float: left;
+  width: 96.75%;
+  margin: 0 0 0 3.25%;
+  -webkit-transition: all, 0.25s;
+  -moz-transition: all, 0.25s;
+  -ms-transition: all, 0.25s;
+  -o-transition: all, 0.25s;
+  transition: all, 0.25s;
+}
+header nav ul li {
+  float: left;
+  width: 50%;
+}
+header nav ul li a:link, header nav ul li a:visited {
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding: .75em 0;
+  text-decoration: none;
+  font-family: "SourceSansProLight", helvetica, arial, sans-serif;
+  color: #000;
+  -webkit-transition: all, 0.25s;
+  -moz-transition: all, 0.25s;
+  -ms-transition: all, 0.25s;
+  -o-transition: all, 0.25s;
+  transition: all, 0.25s;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+header nav ul li a:hover, header nav ul li a:active, header nav ul li a:focus {
+  color: #111;
+  background: #00ff16;
+}
+
+.smallnavjs {
+  margin-top: -5em;
+}
+
+@media screen and (min-width: 540px) {
+  .smallnavjs {
+    margin-top: 0 !important;
+  }
+
+  li.nav-small {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+
+  li.logo a:link, li.logo a:visited {
+    text-align: left;
+  }
+
+  li.logo-moblie {
+    display: none;
+  }
+
+  header {
+    float: left;
+    margin: 2em auto 1em;
+  }
+  header nav {
+    width: 93.5%;
+    margin: 0 3.25%;
+    position: relative;
+  }
+  header nav ul {
+    float: right;
+  }
+  header nav ul li {
+    display: inline;
+    width: auto;
+    margin: 0 .25em;
+  }
+  header nav ul li a:link, header nav ul li a:visited {
+    padding: .5em .5em;
+    width: inherit;
+  }
+}
